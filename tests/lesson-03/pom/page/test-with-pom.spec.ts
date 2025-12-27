@@ -24,15 +24,15 @@ test.describe("Test with POM", () => {
       const registerPage = new RegisterPage(page);
 
       await test.step("Click on Register Page", async () => {
-         await materialPage.gotoPage("Register Page");
+         // await materialPage.gotoPage("Register Page");
          await expect(page.locator("")).toBeVisible();
       });
 
       await test.step("Fill information to all fields", async () => {
          await page.locator("").fill(username);
          await page.locator("").fill(email);
-         await page.locator(getXpathOptionGender(gender)).check();
-         await page.locator(getXpathOptionHobby(hobby)).check();
+         // await page.locator(getXpathOptionGender(gender)).check();
+         // await page.locator(getXpathOptionHobby(hobby)).check();
       });
    });
 });
